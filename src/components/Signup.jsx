@@ -10,7 +10,7 @@ const Signup = () => {
   const[phone,setPhone]=useState("")
   const[password,setPassword]=useState("")
 
-  // initialize other hooks like loading,success abd error
+  // initialize other hooks like loading,success and error
   const[loading,setLoading]=useState("")
   const[success,setSuccess]=useState("")
   const[error,setError]=useState("")
@@ -41,7 +41,7 @@ const Signup = () => {
 
         setSuccess(response.data.message)
 
-        // rest your form
+        // reset your form
         setUsername("")
         setEmail("")
         setPassword("")
